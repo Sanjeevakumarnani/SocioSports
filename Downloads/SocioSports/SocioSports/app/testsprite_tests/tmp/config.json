@@ -1,0 +1,24 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:5173",
+  "loginUser": "admin@sociosports.co.in",
+  "loginPassword": "password123",
+  "executionArgs": {
+    "projectName": "app",
+    "projectPath": "c:\\Users\\ssk\\Desktop\\kimi\\SocioSports\\app",
+    "testIds": [
+      "TC001",
+      "TC002",
+      "TC003",
+      "TC004",
+      "TC005"
+    ],
+    "additionalInstruction": "Fix mounting error on Home page and ensure audio player is verified. Testing against http://localhost:5173.",
+    "envs": {
+      "API_KEY": "sk-user-UAfBxSkzRmjl_Jxdzf56xVwSua733hGmKA_fi7eU7nh_pP4xUs1icwqjKm48ZEDNT5mYUnlvBsqQlvC8yZoy3IWYQSOaHbplXptgfTbENGMvREnh3Bk5FCYQ7sC-AgOqVic"
+    }
+  },
+  "proxy": "http://90ecd23d-9dad-4c87-b060-e37d61587234:jViupaKnS9zVd2Z3XiiwDlcp1OLUtTjs@tun.testsprite.com:8080"
+}

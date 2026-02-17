@@ -1,0 +1,336 @@
+[
+  {
+    "id": "TC001",
+    "title": "Verify Home Page Loads Successfully on Desktop",
+    "description": "Check that the Home page loads successfully and displays the sports ecosystem overview correctly on a desktop browser.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the SocioSports website Home page on a desktop browser."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the main ecosystem overview content is visible and displayed properly."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure all sections such as athlete highlights, trainer profiles, and community links are present."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Verify Home Page Responsiveness on Mobile",
+    "description": "Check that the Home page layout adjusts properly and remains fully functional on various mobile devices.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the SocioSports Home page on mobile viewport sizes (e.g., iPhone, Android)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page layout adapts correctly with no content overflow or misaligned elements."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure all interactive elements are accessible and usable on touch screens."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Event Listing Displays Upcoming Events Correctly",
+    "description": "Validate that the Events page lists upcoming sports events with correct details for each event.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Events page from the main navigation."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that a list of upcoming sports events is displayed."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate event details such as event name, date, location, and brief description are present and accurate."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Event Detail View Loads and Displays Correct Data",
+    "description": "Confirm detailed view of an event loads correctly with comprehensive information and booking options.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Click on an event from the Events listing page to view detailed information."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify event full details including schedule, venue, and organizer info are displayed."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure vendor/stall booking options are presented and functional."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Blog Page Loads Articles, Podcasts, and Stories",
+    "description": "Check the Blog page content hub displays all types of content including articles, podcasts, and athlete stories.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Blog page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify articles are shown with main headlines and summaries."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that podcasts and athlete story sections are visible and content plays or displays accordingly."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Mobile App Promotion Section Links and Tracking",
+    "description": "Validate that the Mobile App Promotion section displays correct download links and conversion tracking is integrated.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Home page and locate the Mobile App Promotion section."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify presence of download links for Android and iOS apps."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm analytics tracking events are triggered when clicking the app download links."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Admin CMS Dashboard Load and Basic Functionality",
+    "description": "Verify admin users can access the CMS dashboard and perform key functions such as creating and editing blog posts.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Login as an admin user and navigate to the CMS dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm dashboard loads with sections for blogs, events, and content moderation."
+      },
+      {
+        "type": "action",
+        "description": "Attempt to create a new blog post with title, body, and metadata."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify new blog post is saved successfully and appears in the blog list."
+      },
+      {
+        "type": "action",
+        "description": "Edit an existing blog post and save changes."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm changes are saved and reflected on the public blog page."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Contact Page Inquiry and Event Booking Form Validation",
+    "description": "Check that the Contact page form validates user input and initiates backend workflows upon submission.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Contact page."
+      },
+      {
+        "type": "action",
+        "description": "Fill in the inquiry form with valid data and select an event booking."
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify form submission is successful and acknowledgement message is shown."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Contact Page Form Input Validation Errors",
+    "description": "Validate the Contact page form input fields enforce validation and display appropriate error messages for invalid inputs.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Contact page."
+      },
+      {
+        "type": "action",
+        "description": "Attempt to submit the form with empty required fields."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation error messages are displayed for each missing required field."
+      },
+      {
+        "type": "action",
+        "description": "Enter invalid email format and attempt to submit."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify appropriate error message indicating invalid email format is shown."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "SEO Meta Tags and Page Titles are Present and Correct",
+    "description": "Ensure all core pages have the correct SEO meta tags and titles to support search engine optimization.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open Home, Events, Blog, About Us, and Contact pages."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify each page includes relevant meta title, description, and keywords tags."
+      },
+      {
+        "type": "assertion",
+        "description": "Check page titles in the browser tab reflect the page content accurately."
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Google Analytics Tracking Fires on Key User Interactions",
+    "description": "Validate that Google Analytics events and conversion tracking are triggered on key user interactions across the site.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate through multiple pages including Home, Events, Blog."
+      },
+      {
+        "type": "action",
+        "description": "Trigger an app download click from the Mobile App Promotion section."
+      },
+      {
+        "type": "action",
+        "description": "Submit inquiry form on Contact page."
+      },
+      {
+        "type": "assertion",
+        "description": "Check network tools or analytics debugger to confirm that relevant GA events are sent."
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Ensure WCAG Accessibility Compliance on Core Pages",
+    "description": "Verify that key pages meet accessibility standards including semantic HTML, keyboard navigation, and ARIA attributes.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Test navigation on Home, Events, Blog, About Us, and Contact pages using keyboard only."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure all interactive elements are keyboard accessible and focus states are visible."
+      },
+      {
+        "type": "assertion",
+        "description": "Use screen reader to validate correct reading order and labeling of elements."
+      },
+      {
+        "type": "assertion",
+        "description": "Check color contrast ratios meet minimum WCAG requirements."
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Performance Testing for Page Load Times",
+    "description": "Validate that core pages load within performance benchmarks under normal network conditions.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load Home, Events, Blog, About Us, and Contact pages under typical bandwidth (e.g., 3G, 4G)."
+      },
+      {
+        "type": "assertion",
+        "description": "Measure and verify that page load times meet the defined performance targets (e.g., under 3 seconds)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that assets are optimized and no unnecessary large requests are made."
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "CMS Content Moderation Reject and Approve Flows",
+    "description": "Ensure admin users can moderate content by approving or rejecting blog posts and events appropriately.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Login as admin and select a pending blog post or event."
+      },
+      {
+        "type": "action",
+        "description": "Perform content rejection with reason and save."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify rejected content is marked accordingly and not published on the live site."
+      },
+      {
+        "type": "action",
+        "description": "Approve a pending content item."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the content appears published and visible to all users."
+      }
+    ]
+  }
+]

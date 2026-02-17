@@ -1,0 +1,62 @@
+{
+    "tech_stack": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "GSAP",
+        "TailwindCSS"
+    ],
+    "features": [
+        {
+            "name": "Home Page",
+            "description": "Main landing page with animations",
+            "files": [
+                "src/pages/HomePage.tsx",
+                "src/sections/Hero.tsx"
+            ],
+            "api_doc": {
+                "paths": {
+                    "/": {
+                        "get": {
+                            "summary": "Landing page"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Events Page",
+            "description": "List and details of events",
+            "files": [
+                "src/pages/EventsPage.tsx",
+                "src/pages/EventDetailPage.tsx"
+            ],
+            "api_doc": {
+                "paths": {
+                    "/events": {
+                        "get": {
+                            "summary": "Events list"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Blog Hub",
+            "description": "Articles and podcasts",
+            "files": [
+                "src/pages/ResourcesPage.tsx",
+                "src/pages/BlogPostPage.tsx"
+            ],
+            "api_doc": {
+                "paths": {
+                    "/blog": {
+                        "get": {
+                            "summary": "Blog articles"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
